@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viktoriia Halukhina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  .sections h2 {
+    color: white;
+  }
+</style>
+
+</head>
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="files/imegs/wasser.mp4" type="video/mp4" />
+  </video>
+
+  <div class="content">
+    <div class="profile">
+      <img src="files/imegs/ich1.jpg" alt="Viktoriia Halukhina" />
+      <h1>Viktoriia Halukhina</h1>
+      <p>Zukünftige Fullstack-Entwicklerin mit Herz und Vision</p>
+      <div class="buttons">
+        <button onclick="toggleSection('ausbildung')">🎓 Über mich</button>
+        <button onclick="toggleSection('erfahrung')">💼 Erfahrung</button>
+        <button onclick="toggleSection('motivation')">❤️ Motivation</button>
+        <button onclick="toggleSection('sprachen')">🌍 Sprachen</button>
+        <button onclick="toggleSection('kontakte')">🔗 Soziale Netzwerke</button>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="section" id="ausbildung">
+        <h2>Über mich</h2>
+        <p>Ich bin eine kreative und engagierte Frau mit langjähriger Erfahrung im Grafikdesign und in der IT.
+        Mein Ziel ist es, mich schnell in den Arbeitsmarkt zu integrieren und mit meinen Fähigkeiten einen gesellschaftlichen Beitrag zu leisten.
+        Ich lerne schnell, liebe moderne Technologien und möchte meine Zukunft in der Softwareentwicklung gestalten.</p>
+      </div>
+      <div class="section" id="erfahrung">
+        <h2>Erfahrung</h2>
+        <p>     <ul>
+        <li>Grafikdesign: Illustrator, Photoshop, CorelDRAW</li>
+        <li>Werbetechnik: Poscat, Oracal-Folien</li>
+        <li>IT-Support: Windows-Installation und Pflege</li>
+        <li>Grundlagen: HTML, CSS, JavaScript, Git, VS Code</li>
+        <li>Eignungstest AIT Technology School: 82%</li>
+      </ul></p>
+      </div>
+      <div class="section" id="motivation">
+        <h2>Motivation</h2>
+        <p> Als alleinerziehende Mutter eines sehbehinderten Kindes ist es mir wichtig, unabhängig zu werden und eine stabile Zukunft aufzubauen.
+        Ich sehe Weiterbildung als Investition in unsere gemeinsame Zukunft.</p>
+      </div>
+      <div class="section" id="sprachen">
+        <h2>Sprachen</h2>
+        <ul>
+          <li>Deutsch – B2-Prüfung am 18.10.2025</li>
+          <li>Russisch – C2</li>
+          <li>Ukrainisch – C2</li>
+          <li>Englisch – A1</li>
+        </ul>
+      </div>
+      <div class="section" id="kontakte">
+        <h2>Soziale Netzwerke</h2>
+        <p>
+          <a href="https://github.com/Viktoriia737" target="_blank">GitHub</a> |
+          
+          <a href="https://www.instagram.com/vi_ktoria7943/">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="contact-footer">
+  <a href="tel:+491234567890" class="contact-button">📞 +49 160 8451568</a>
+  <a href="mailto:viktoria@example.com" class="contact-button">✉️ galuhina757@mail.com</a>
+</div>
+
+  <script>
+    function toggleSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        if (section.id === id) {
+          section.classList.toggle('active');
+        } else {
+          section.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+---
+
